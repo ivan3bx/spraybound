@@ -13,7 +13,7 @@ class MyServiceSpec extends Specification with Specs2RouteTest with MyService {
 
     "return a greeting for GET requests to the root path" in {
       Get() ~> myRoute ~> check {
-        entityAs[String] must contain("Say hello")
+        entityAs[String] must contain("foo")
       }
     }
 
