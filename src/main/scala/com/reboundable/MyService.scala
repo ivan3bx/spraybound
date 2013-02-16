@@ -1,4 +1,4 @@
-package com.example
+package com.reboundable
 
 import akka.actor.Actor
 import spray.routing._

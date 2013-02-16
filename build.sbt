@@ -1,13 +1,18 @@
-organization  := "com.example"
+organization     := "com.reboundable"
 
-version       := "0.1"
+name             := "Rebound Server"
 
-scalaVersion  := "2.10.0"
+version          := "0.9"
+
+scalaVersion := "2.10.0"
 
 scalacOptions := Seq("-unchecked", "-deprecation", "-encoding", "utf8")
 
+ideaProjectName  := "Rebound Project"
+
 resolvers ++= Seq(
-  "spray repo" at "http://repo.spray.io/"
+  "Spray Repository"    at "http://repo.spray.io/",
+  "Typesafe Repository" at "http://repo.typesafe.com/typesafe/releases/"
 )
 
 libraryDependencies ++= Seq(
