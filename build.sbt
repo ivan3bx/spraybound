@@ -25,6 +25,8 @@ libraryDependencies ++= Seq(
   "io.spray"            %   "spray-testkit" % "1.1-M7",
   "io.spray"            %%  "spray-json"    % "1.2.3",
   "com.typesafe.akka"   %%  "akka-actor"    % "2.1.0",
+  "postgresql"          %   "postgresql"    % "9.1-901.jdbc4",
+  "play"                %%  "anorm"         % "2.1.0",
   "org.specs2"          %%  "specs2"        % "1.13" % "test",
   "org.subethamail"     %   "subethasmtp"   % "3.1.3"
 )
