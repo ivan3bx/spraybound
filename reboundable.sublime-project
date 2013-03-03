@@ -1,0 +1,35 @@
+{
+    "folders":
+    [
+        {
+            "path": ".",
+            "name": "Root",
+            "folder_exclude_patterns": ["target", "project", "src", ".idea*"]
+        },
+        {
+            "path": "project",
+            "name": "Project",
+            "folder_exclude_patterns": ["target"]
+        },
+        {
+            "path": "src/main/scala/com/reboundable",
+            "name": "Sources"
+        },
+        {
+            "path": "src/test/scala/com/reboundable",
+            "name": "Tests"
+        }
+
+    ],
+    "settings":
+    {
+        "tab_size": 2
+    },
+    "build_systems":
+    [
+        {
+            "name": "List",
+            "cmd": ["ls"]
+        }
+    ]
+}
