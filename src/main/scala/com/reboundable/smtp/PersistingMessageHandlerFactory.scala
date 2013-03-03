@@ -1,4 +1,4 @@
-package com.reboundable.com.reboundable.smtp
+package com.reboundable.smtp
 
 import org.subethamail.smtp.{MessageHandler, MessageContext, MessageHandlerFactory}
 
