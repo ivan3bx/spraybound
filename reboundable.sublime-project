@@ -1,35 +1,46 @@
 {
-    "folders":
-    [
-        {
-            "path": ".",
-            "name": "Root",
-            "folder_exclude_patterns": ["target", "project", "src", ".idea*"]
-        },
-        {
-            "path": "project",
-            "name": "Project",
-            "folder_exclude_patterns": ["target"]
-        },
-        {
-            "path": "src/main/scala/com/reboundable",
-            "name": "Sources"
-        },
-        {
-            "path": "src/test/scala/com/reboundable",
-            "name": "Tests"
-        }
-
-    ],
-    "settings":
-    {
-        "tab_size": 2
-    },
-    "build_systems":
-    [
-        {
-            "name": "List",
-            "cmd": ["ls"]
-        }
-    ]
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"ls"
+			],
+			"name": "List"
+		}
+	],
+	"folders":
+	[
+		{
+			"folder_exclude_patterns":
+			[
+				"target",
+				"project",
+				"src",
+				".idea*"
+			],
+			"name": "Root",
+			"path": "/Users/ivan/projects/reboundable"
+		},
+		{
+			"folder_exclude_patterns":
+			[
+				"target"
+			],
+			"name": "Project",
+			"path": "project"
+		},
+		{
+			"name": "Sources",
+			"path": "src/main/scala/com/reboundable"
+		},
+		{
+			"name": "Tests",
+			"path": "src/test/scala/com/reboundable"
+		}
+	],
+	"settings":
+	{
+		"tab_size": 2
+	}
 }
