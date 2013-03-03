@@ -32,3 +32,5 @@ libraryDependencies ++= Seq(
 )
 
 seq(Revolver.settings: _*)
+
+javaOptions += "-Xmx250m"
