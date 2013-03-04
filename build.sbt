@@ -28,6 +28,7 @@ libraryDependencies ++= Seq(
   "postgresql"          %   "postgresql"    % "9.1-901.jdbc4",
   "play"                %%  "anorm"         % "2.1.0",
   "com.github.seratch"  %%  "scalikejdbc"   % "[0.5,)",
+  "org.slf4j"           %   "slf4j-simple"  % "[1.7,)",
   "org.specs2"          %%  "specs2"        % "1.13" % "test",
   "org.subethamail"     %   "subethasmtp"   % "3.1.3"
 )
