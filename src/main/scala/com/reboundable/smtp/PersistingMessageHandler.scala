@@ -33,14 +33,9 @@ class PersistingMessageHandler(private val ctx: MessageContext) extends MessageH
   }
 
   def done() {
-    println("Here's what I will insert:")
-    println("From: " + from)
-    println("  To: " + recipient)
-    println("Data: " + data)
-    save()
-  }
-
-  object DB {
+    if (from != null && recipient != null && data != null) {
+      save()
+    }
   }
 
   def save() = {
@@ -49,9 +44,9 @@ class PersistingMessageHandler(private val ctx: MessageContext) extends MessageH
       implicit connection: Connection =>
         val result: Option[Long] = SQL(
           """
-      INSERT INTO email_messages(author, recipients, contents")
-      values ({author}, {recipients}, {contents})
-      """)
+            INSERT INTO email_messages(author, recipients, contents)
+            values ({author}, {recipients}, {contents})
+          """)
           .on('author -> from, 'recipients -> recipient, 'contents -> data)
           .executeInsert()
     }
