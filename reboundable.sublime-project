@@ -35,6 +35,10 @@
 			"path": "src/main/scala/com/reboundable"
 		},
 		{
+			"name": "Resources",
+			"path": "src/main/resources"
+		},
+		{
 			"name": "Tests",
 			"path": "src/test/scala/com/reboundable"
 		}
