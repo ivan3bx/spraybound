@@ -8,8 +8,11 @@ import scalikejdbc.ConnectionPool
 
 
 object Database {
+
+  val settings = new Settings(com.typesafe.config.ConfigFactory.load())
+
   Class.forName("org.postgresql.Driver").newInstance
-  ConnectionPool.singleton("jdbc:postgresql://localhost/ivan", "ivan", "")
+  ConnectionPool.singleton("jdbc:postgresql://localhost/${settings.dbname}", settings.dbuser, settings.dbpass)
 
   def getConnection(url: String) = {
     DriverManager.getConnection(url)
